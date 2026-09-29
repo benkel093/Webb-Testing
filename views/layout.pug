@@ -1,0 +1,27 @@
+doctype html
+html(lang="sv")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    // Standardtitel om undersidan inte anger en egen
+    title 
+      block mytitle
+        | Min Webbplats
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    div
+      nav
+        ul
+          li: a(href="/") Hem
+          li: a(href="/om-oss") Om oss
+          li: a(href="/kontakt") Kontakt
+
+    main
+      // Här petas det unika innehållet in för varje sida
+      block content
+
+    footer
+      p &copy; 2026 Min Webbplats. Alla rättigheter förbehållna.
+
+
+
